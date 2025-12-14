@@ -1,0 +1,19 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="Container" style="flex-grow: 0; align-items: center; justify-content: flex-start; width: 100%; height: 50%;">
+        <ui:VisualElement name="TopBar" style="flex-grow: 0; width: 60%; height: 30%; align-items: center; align-self: flex-start; justify-content: space-between; flex-direction: row;">
+            <ui:ProgressBar value="0" title="100%" name="HealthBar" high-value="100" style="background-color: rgb(31, 41, 55); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; width: 20%; color: rgb(0, 0, 0);" />
+            <ui:VisualElement name="TopSection" style="flex-grow: 0; width: 25%; height: 100%; flex-direction: row;">
+                <ui:VisualElement name="PlayerScoreText" style="flex-grow: 1; width: 25%; height: 100%; background-color: rgb(30, 58, 138); align-items: center; justify-content: center; font-size: 20px; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); align-self: auto; border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px;">
+                    <ui:Label text="0&#10;" name="PlayerScore" style="color: rgb(255, 255, 255);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="EnemyScoreText" style="flex-grow: 1; width: 25%; height: 100%; background-color: rgb(127, 29, 29); align-items: center; justify-content: center; font-size: 20px; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 0; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-top-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; border-bottom-left-radius: 1px;">
+                    <ui:Label text="0&#10;" name="EnemyScore" style="color: rgb(255, 255, 255);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="WinContainer" style="flex-grow: 0; flex-direction: column; align-items: center; justify-content: center; display: none; width: 50%; height: 20%; align-self: center;">
+        <ui:Label text="Character Win!" name="WinText" style="font-size: 25px; color: rgb(255, 255, 255); position: relative; top: auto;" />
+        <ui:Label text="Player Score is 2 And Enemy score is 1. Press R For New Game." name="NewGameText" style="color: rgb(255, 255, 255); justify-content: flex-start; align-self: auto; -unity-text-align: upper-center;" />
+    </ui:VisualElement>
+</ui:UXML>
