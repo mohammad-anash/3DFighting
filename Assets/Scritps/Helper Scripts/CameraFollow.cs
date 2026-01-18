@@ -11,15 +11,9 @@ public class CameraFollow : MonoBehaviour
     {
         if (!target) return;
 
-        // ----------------------------
-        // FOLLOW POSITION
-        // ----------------------------
         Vector3 desiredPos = target.position + target.rotation * offset;
         transform.position = Vector3.Lerp(transform.position, desiredPos, moveSmooth * Time.deltaTime);
 
-        // ----------------------------
-        // FOLLOW ONLY Y ROTATION
-        // ----------------------------
         Quaternion targetRotation = Quaternion.Euler(0f, target.eulerAngles.y, 0f);
 
         transform.rotation = Quaternion.Lerp(

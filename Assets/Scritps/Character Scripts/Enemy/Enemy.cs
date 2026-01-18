@@ -3,6 +3,7 @@ using UnityEngine.AI;
 
 public class Enemy : Character
 {
+
   [Header("References")]
   [SerializeField] private Transform player;
   private NavMeshAgent agent;

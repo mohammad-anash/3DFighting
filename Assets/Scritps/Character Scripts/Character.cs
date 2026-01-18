@@ -119,7 +119,6 @@ public class Character : MonoBehaviour
         }
     }
 
-
     public void Respawn()
     {
         currentHealth = maxHealth;
@@ -137,14 +136,11 @@ public class Character : MonoBehaviour
         }
     }
 
-
     public void Heal(int amount)
     {
         currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
         UIController.Instance.UpdateHealth(currentHealth, maxHealth);
     }
-
-
 
     protected virtual void Die()
     {

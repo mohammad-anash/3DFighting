@@ -8,7 +8,6 @@ public class Player : Character
     private float attackRate = 0.2f;
     private float timer = 0f;
 
-
     private void Update()
     {
         timer += Time.deltaTime;
